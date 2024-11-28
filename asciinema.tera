@@ -1,0 +1,13 @@
+---
+whiskers:
+  version: "2.5.1"
+  matrix:
+    - flavor
+  filename: "src/{{ flavor.identifier }}.json"
+  hex_format: "#{{r}}{{g}}{{b}}"
+---
+{
+    "fg": "{{ text.hex }}",
+    "palette": "{{ surface1.hex }}:{{ red.hex }}:{{ green.hex }}:{{ yellow.hex }}:{{ blue.hex }}:{{ pink.hex }}:{{ teal.hex }}:{{ subtext1.hex }}:{{ surface2.hex }}:{{ red.hex }}:{{ green.hex }}:{{ yellow.hex }}:{{ blue.hex }}:{{ pink.hex }}:{{ teal.hex }}:{{ subtext0.hex }}",
+    "bg": "{{ base.hex }}"
+}
